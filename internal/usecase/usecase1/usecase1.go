@@ -6,6 +6,8 @@ import (
 
 type UseCase1 struct {
 	clck  clock
+
+	// more repos can be defined here
 	repo1 repository1
 }
 

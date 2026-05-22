@@ -1,7 +1,8 @@
 package entity1
 
 type DomainEntity1 struct {
-	// declare fields here
+	Field1 string
+	Field2 int
 }
 
 

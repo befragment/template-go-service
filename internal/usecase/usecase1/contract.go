@@ -26,6 +26,12 @@ type logger interface {
 }
 
 // UUID string generation if needed
-type uuidgen struct {
+type uuidgen interface {
 	New() string
+}
+
+// use for hashing passwords
+type hasher interface {
+	Hash(_ context.Context, password string) (string, error)
+	Compare(_ context.Context, hash, password string) error
 }
